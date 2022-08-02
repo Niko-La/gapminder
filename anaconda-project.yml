@@ -3,8 +3,6 @@ name: gapminder
 description: |
   Using four different plotting libraries for Hans Rosling's gapminder
   example
-maintainers:
-  - philippjfr
 
 channels:
   - pyviz
@@ -12,6 +10,9 @@ channels:
 
 dependencies: &deps
   - python=3.6
+  - nbserverproxy
+  - conda-forge::altair
+  - conda-forge::plotly
   - notebook ==5.7.8
   - ipykernel ==5.1.0
   - nomkl
